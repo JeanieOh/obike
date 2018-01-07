@@ -1,0 +1,278 @@
+body {
+	background-attachment: fixed;
+	background-position: center top;
+	background-image: url('black.jpg');
+	background-size: 100%;
+	color: #000305;
+	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	line-height: 1.429;
+	margin: 0;
+	padding: 0;
+	}
+ 
+	
+.body {
+	clear: both;
+	margin: 0 auto;
+	width: 80%;
+	margin-left:68px;
+	
+}
+
+
+
+
+
+
+
+/*for obike maintainance*/
+
+body,html{
+    height: 100%;
+    margin: 0;
+}
+
+a {
+	outline: 0; 
+  }
+  
+a img {
+	border: 0px;
+	text-decoration: none;
+}
+ 
+a:link, a:visited {
+	color: #493f32;
+	padding: 0 1px;
+	text-decoration: none;
+}
+ 
+a:hover, a:active  {
+	color: #8B4513;
+	text-decoration: none;
+}
+ 
+ 
+/* ===========================
+ ===== Main Navigation =====
+ =========================== */
+ 
+.mainHeader nav {
+	display: table;
+    width: 109%;
+	background: rgba(255, 255, 255, 0.62);
+	font-size: 1.143em;
+	height: 40px;
+	line-height: 30px;
+	margin: 0 auto 30px auto;
+	text-align: center;
+	border-radius: 5px;
+	font-family: lucida console;
+	
+}
+ 
+.mainHeader nav ul {
+	display: table-row;
+	table-layout:fixed;
+    margin: 0;
+    padding: 0;
+	list-style: none;
+	margin: 0px auto;
+	
+}
+ 
+.mainHeader nav ul li {
+	list-style: none;
+    display: table-cell;
+    text-align: center;
+	float:center;
+	display: inline;
+	
+}
+ 
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	height: 30px;
+	padding: 5px 5px;
+	text-decoration: none;
+	color: #0f1010;
+	padding-top:30px;
+}
+ 
+.mainHeader nav a:hover {
+	background:white;
+	text-shadow: none !important;
+	
+}
+ 
+.mainHeader nav a:active,.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	background: white;
+	color: #0f1010;
+	text-shadow: none !important;
+	
+}
+ 
+.mainHeader nav li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/*icon*/
+.img-circle{
+	border-radius:50%;
+	width:40px;
+}
+
+.Header {
+	display: table;
+    table-layout: fixed;
+    width: 100%;
+	font-size: 1.3em;
+	height: 40px;
+	margin: 0 auto 30px auto;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	text-decoration: underline;
+}
+	
+ 
+.content {
+	text-align: center;
+	width: 109%;
+	
+	background: rgba(255, 255, 255, 0.62);
+	color: #0f1010;
+	
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	
+}
+  
+#h1{
+	text-align: center;
+	width: 109%;
+	border-radius: 10px;
+	background-image: url('obike3.jpg');
+	background-size: 100%;
+	padding-bottom:10px;
+}
+
+/*for button to change size*/
+button#A {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.B{
+	position:absolute;
+	top:50px;
+	right :500px;
+}
+
+
+/*language*/
+.dropbtn {
+	position:relative;
+    background-color: black;
+    color: white;
+    padding-right: 40px;
+	padding-left: 40px;
+    font-size: 16px;
+    border-radius: 100px;
+    cursor: pointer;
+	margin-right:160px;
+	
+	
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+	
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content {
+	width:75%;
+}
+.dropdown-content li {
+	text-align: center;
+}
+	
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+ 
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+	padding: 20px 30px;
+	border-radius: 70px;
+	
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: grey;
+	
+}
+
+
+
+
+
+.snipped {
+	padding-left:50px;
+	padding-right:20px;
+	padding-top: 35px;
+	border-radius:100px;
+	
+	
+}
+
+.bgimg {
+    background-image: url('ground.jpg');
+	background-size: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+	font-weight:bold;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 50px;
+	text-shadow:10px 10px 20px grey;
+	width:109%;
+	
+}
+
+
+.middle {
+    position: absolute;
+	
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+

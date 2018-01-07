@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="homechinese.css" media="screen">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+	
+	<header class="mainHeader">		
+		<nav><ul>
+			<li class="active" class='dropdown'><a href="home.html"><img class="img-circle" src="homelogo.jpg">首页</a></li>
+			<li><a href="cpf.html"><img class="img-circle" src="moneylogo.png">CPF公积金户口</a></li>
+			<li><a href='obike.html'><img class="img-circle" src="bikelogo.png">Obike</a></li>
+			<li><a href="food.html"><img class="img-circle" src="foodlogo.png">食品交货</a></li>
+				
+				<div class="dropdown">
+					<li class="dropdown"><a href="transportation.html"><img class="img-circle" src="transportationlogo.png">运输服务</a></li>
+				<div class="dropdown-content">
+					<li><a href="uber.html">Uber/Grab</a></li>
+					<li><a href="bus.html">巴士服务</a></li>
+					<li><a href="mrt.html">地铁</a></li>
+				</div>
+				</div>
+				
+				
+				<div class="dropdown">
+					<li class="dropdown"><a href="internet.html"><img class="img-circle" src="bankinglogo.jpg">网上银行</a></li>
+				<div class="dropdown-content">
+					<li><a href="ocbc.html">华侨银行</a></li>
+					<li><a href="internet-banking.html">星展银行</a></li>
+				
+				</div>
+				</div>
+			
+				<div class="dropdown">
+					<button class="dropbtn">语言</button>
+                <div class="dropdown-content">
+					<li><a href="home.html">English</a></li>
+					<li class="active"><a href="homechinese.html">华文</a></li>
+					<li><a href="homemalay.html">Malay</a></li>
+					<li><a href="hometamil.html">தமிழ்</a></li>
+                </div>
+                </div>
+				
+					<div class="B">
+					<button onclick='resizeText(-1)' class='button' id='A'>A-</button>
+					<button onclick='sizenormal()' class='button' id='A'>A</button>
+					<button onclick='resizeText(1)' class='button' id='A'>A+</button>
+					</div>
+					
+		</ul></nav>
+	</header>
+	
+	
+	<div class="content">
+	
+	
+		<div id="h1"><img class="snipped" src="homeback.png"></div>
+				
+		<br>
+		<br>
+
+		<div class="slideshow-container">
+		
+		<div class="mySlides fade">
+		  <img src="cpfforss.png" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">		  
+		  <img src="obikeforss.png" style="width:100%">		  
+		</div>
+
+		<div class="mySlides fade">		  
+		  <img src="foodforss.png" style="width:100%">		  
+		</div>
+
+		<div class="mySlides fade">		  
+		  <img src="transportationforss.png" style="width:100%">		  
+		</div>
+
+
+		<div class="mySlides fade">		  
+		  <img src="internetforss.png" style="width:100%">		  
+		</div>
+
+
+
+		</div>
+		<br>
+
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+
+		</div>
+		
+		
+		
+			<div id='everything'>
+			<fieldset>
+			<legend width="50px"><h2>目的:</h2></legend>
+			<ul class="bullet" style="text-align:left ">
+			<li>提供一个用户友好的网站，同时伸展到不同的年龄组</li>
+			<li>米和年轻一代和年长一辈的差距引导年长一辈进入智慧民族社会</li>
+			<li>创建一个以新加坡四种不同语言向公众传达步骤和信息的网站。解决对语言障碍的担忧。</li>
+			<li>为日常生活带来便利。通过简化步骤访问某些网页或移动应用程序，使我们的生活更轻松。</li>
+			<li>简化大段落，复杂而令人困惑的步骤，简单地一步一步的指导图像。</li>
+			<li>我们为公众天假聊不同类型的视频，一遍再点击标签时，查看并更好的了解主题。</li>
+			<li>在查看步骤后，可以方便的访问官方网站。</li>
+			</ul>
+			</fieldset>
+			
+			
+			<h3>查看我们的故事板！</h3>
+			
+			</div>
+		<div id="pic">
+			<a target="_blank" href="story1.png">
+				<img src="story1.png" alt="story1" style="width:500px">
+			</a>
+			<a target="_blank" href="story2.png">
+				<img src="story2.png" alt="story2" style="width:500px">
+			</a>
+		</div>
+	
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+
+
+
+function currentSlide(n) {
+  showw(slideIndex = n);
+}
+
+function showw(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+function resizeText(multiplier) {
+	var elem = document.getElementById("everything");
+	var currentSize = elem.style.fontSize || 16;
+	elem.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "px";
+}
+		
+function sizenormal(){
+	document.getElementById('everything').style.fontSize = "16px";
+}
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html> 
